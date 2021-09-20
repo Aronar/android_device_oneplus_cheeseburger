@@ -34,5 +34,8 @@ TARGET_OTA_ASSERT_DEVICE := cheeseburger,OnePlus5,oneplus5
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
+# SELinux
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # inherit from the proprietary version
 -include vendor/oneplus/cheeseburger/BoardConfigVendor.mk
